@@ -1,0 +1,21 @@
+# Core (required)
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Automation tools
+playwright>=1.45.0
+pyautogui>=0.9.54
+plyer>=2.1.0
+Pillow>=10.0.0        # downscales screenshots before sending to vision models
+
+# Telegram remote control (optional)
+python-telegram-bot>=21.0
+
+# Voice assistant (optional)
+SpeechRecognition>=3.10.0
+pyttsx3>=2.90
+pyaudio>=0.2.14
+
+# NOTE: No vendor SDKs needed. Komen AI talks to every provider
+# (Anthropic, OpenAI, Groq, Gemini, OpenRouter, DeepSeek, Together,
+# Mistral, Ollama) over plain HTTP via `requests`.
